@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #3B3937;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 10px 0 10px;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 10px;
+    background-color: #3B3937;
+}
+
+@import './header/header.scss';
+@import './main/section-product-order.scss';
+@import './main/section-product-display.scss';
+@import './main/section-selection-help.scss';
+@import './main/section-news.scss';
+@import './footer/footer.scss';

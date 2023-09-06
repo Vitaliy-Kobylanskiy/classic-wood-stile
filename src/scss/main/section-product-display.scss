@@ -1,0 +1,204 @@
+.section-display {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 120px 0 0 0;
+}
+
+.container {
+    max-width: 1280px;
+    flex-grow: 1;
+
+    .title-block {
+        margin: 0 0 30px 0;
+    }
+
+    .title-block__title {
+        color: #3B3937;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 100%;
+        /* 64px */
+        letter-spacing: -0.64px;
+    }
+
+    .list-block__list {
+        display: flex;
+        margin-bottom: 60px;
+    }
+}
+
+.list-block__list-item {
+    cursor: pointer;
+    flex-grow: 1;
+    padding: 10px 54px;
+    color: #3B3937;
+    border: 1px solid #DADADA;
+}
+
+.list-block__list-item:hover {
+    border: 1px solid #3B3937;
+}
+
+.dispay-block__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    .dispay-block__list-item {
+        border: 1px solid #DADADA;
+        margin: 0 0 40px 0;
+    }
+
+    .dispay-block__container {
+        padding: 20px 0 0 20px;
+    }
+
+    .dispay-block__list-link {
+        display: block;
+        width: 100%;
+        height: 100%;
+        color: #3B3937;
+    }
+
+    .dispay-block__list-title {
+        margin-bottom: 7px;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 100%;
+        /* 18px */
+        letter-spacing: 0.18px;
+    }
+
+    .dispay-block__list-price {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 120%;
+        /* 21.6px */
+        letter-spacing: 0.18px;
+        margin-bottom: 33px;
+    }
+
+    .dispay-block__list-img {
+        max-width: 240px;
+        max-height: 240px;
+        margin: 0 81px 30px 59px;
+    }
+
+    .dispay-block__svg-block {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 20px 20px 0;
+    }
+
+    .dispay-block__svg-img {
+        width: 74px;
+        height: 10px;
+    }
+
+    .dispay-block__svg-order {
+        color: #B14101;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 140%;
+        /* 21px */
+        letter-spacing: 0.9px;
+        text-transform: uppercase;
+    }
+}
+
+.dispay-block__list-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 90px 0;
+
+    .dispay-block__list-showBtn {
+        width: 100%;
+        color: #3B3937;
+        height: 60px;
+        flex-grow: 1;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 140%;
+        /* 21px */
+        letter-spacing: 0.9px;
+        text-transform: uppercase;
+        cursor: pointer;
+        background-color: transparent;
+    }
+}
+
+// Адаптив
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .section-display {
+        padding: 60px 0 0 0;
+    }
+
+    .container {
+
+        .title-block {
+            margin: 0 0 30px 0;
+        }
+
+        .title-block__title {
+            text-align: center;
+            color: #3B3937;
+            font-size: 40px;
+            font-weight: 500;
+            line-height: 100%;
+            /* 64px */
+            letter-spacing: -0.64px;
+        }
+
+        .list-block__list {
+            display: block;
+            margin-bottom: 30px;
+        }
+    }
+
+    .list-block__list-item {
+        text-align: center;
+    }
+
+    .dispay-block__list {
+        justify-content: space-evenly;
+
+        .dispay-block__list-img {
+            margin: 0 17px 30px 14px;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 993px) {
+    .section-display {
+        padding: 60px 0 0 0;
+    }
+
+    .container {
+
+        .title-block {
+            margin: 0 0 30px 0;
+        }
+
+        .title-block__title {
+            text-align: center;
+            color: #3B3937;
+            font-size: 40px;
+            font-weight: 500;
+            line-height: 100%;
+            /* 64px */
+            letter-spacing: -0.64px;
+        }
+    }
+
+    .list-block__list-item {
+        padding: 15px 30px 10px 30px;
+        text-align: center;
+    }
+
+    .dispay-block__list {
+        justify-content: space-evenly;
+    }
+}
